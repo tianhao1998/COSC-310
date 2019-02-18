@@ -18,10 +18,21 @@ data={
 'games':['a whole day','5 hours'] ,
 'job':['no, I have no time to work.''yes, I have.'],
 'father':['his name is ChatbotA'],
+'mother':['Her name is Sara'],
+'cousin':['Her name is Sam'],
+'sister':['Her name is Amy'],
 'math':'steve',
+'art':'Ronny',
+'drama':'Abie',
+'CS':'Aron',
+'Social':'Aaron',
+'History':'summer',
 'friend':['I do not have friend except you','her name is annie, another chatbot'],
 'hometomn':['kelowna','Mars'],
-'summer':['vancouver','ontario']
+'summer':['vancouver','ontario'],
+'game':'LOL',
+'Car':'Audi'
+
 }
 dataKey=list(data.keys())
 
@@ -47,8 +58,9 @@ print('here is a sample question:what''s your major\n')
 question=input("What you want to ask")
 
 if question in dataKey :
-    print((data[question])[1])
-    
+    print((data[question])[0])
+else: 
+    print("I can not understand the question")
 #play=True
 
 #while play==True:
